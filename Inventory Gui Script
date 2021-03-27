@@ -1,0 +1,7 @@
+local ScreenGui = script.Parent --ScreenGui
+local Inventory = ScreenGui.Inventory --InventoryFrame
+local OpenButton = ScreenGui.OpenInventory --Button that will open the 
+
+OpenButton.MouseButton1Up:Connect(function()
+	Inventory.Visible = not Inventory.Visible
+end)
